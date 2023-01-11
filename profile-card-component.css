@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: 'Kumbh Sans';
+    max-width: 100vw;
+    max-height: 100vh;
+    background: var(--dark-cyan);
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-top {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    top: -40%;
+    left: -10%;
+}
+
+.bg-bottom {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    bottom: -60%;
+    right: -5%;
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+
+
+}
+
+.card-image {
+    position: relative;
+    width: 350px;
+    height: 150px;
+}
+
+.bg-card {
+    width: 100%;
+    height: 100%;
+}
+
+.img-vector {
+    border: solid 5px #fff;
+    position: absolute;
+    width: 100px;
+    top: 70%;
+    left: 35%;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    background: #fff;
+}
+
+.card-description {
+    background-color: #fff;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+h2,
+h1 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.hero-description {
+    display: flex;
+    justify-content: center;
+    color: var(--dark-gray);
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    /* flex-direction: column; */
+}
+
+h1 {
+    margin-right: 10px;
+}
+
+.localisation {
+    color: var(--dark-gray);
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+.stat {
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+hr {
+    width: 100%;
+    color: var(--dark-gray);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 0;
+}
